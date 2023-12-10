@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { GoHomeFill, GoSearch } from 'react-icons/go';
 import { CgProfile } from 'react-icons/cg';
 import { IoMdCreate } from 'react-icons/io';
+import COLOR from '../utility/color';
 
 function NavbarComp() {
     return (
@@ -33,7 +34,6 @@ function NavbarComp() {
         </>
     );
 }
-
 export default NavbarComp;
 
 const NavbarWrapper = styled.div`
@@ -42,12 +42,15 @@ const NavbarWrapper = styled.div`
     left: 0;
     height: 100vh;
     width: 245px;
-    border-right: 1px solid #e8eaeb;
+    border-right: 1.2px solid ${COLOR.Memorize_GRAY};
+    @media screen and (max-width: 910px) {
+        display: none;
+    }
     @media screen and (max-width: 700px) {
         display: none;
     }
     ul {
-        color: black;
+        color: ${COLOR.BLACK};
         margin-top: 45px;
         padding-left: 0px;
 
@@ -64,12 +67,12 @@ const NavbarWrapper = styled.div`
             list-style: none;
             transition: 0.2s;
             &:hover {
-                background-color: #e8eaeb;
+                background-color: ${COLOR.Memorize_GRAY};
                 cursor: pointer;
             }
             svg {
                 font-size: 30px;
-                color: #1e2e3e;
+                color: ${COLOR.Memorize_BLUE};
                 padding-right: 10px;
             }
         }
@@ -80,7 +83,7 @@ const Logo = styled.div`
     margin-top: 20px;
     font-size: 28px;
     font-weight: 700;
-    color: #1e2e3e;
+    color: ${COLOR.Memorize_BLUE};
     display: flex;
     align-items: center;
     padding-left: 13px;
