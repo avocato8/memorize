@@ -73,5 +73,8 @@
     "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  }
 }
