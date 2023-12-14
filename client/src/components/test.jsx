@@ -1,9 +1,11 @@
-import Navbar from "./navbar";
+import ContentComp from './contentComp';
+import NavbarComp from './navbarComp';
 
 function Test() {
     return (
         <>
-            <Navbar></Navbar>
+            <NavbarComp></NavbarComp>
+            <ContentComp></ContentComp>
         </>
     );
 }
