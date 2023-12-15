@@ -1,5 +1,6 @@
 # memorize
-<p>A website to help you with your studies.</p>
+<img src='/client/public/logo.png' height="250px"/>
+A website to help you with your studies.
 
 ## Tech Stack
 <p>FrontEnd: React</p>
