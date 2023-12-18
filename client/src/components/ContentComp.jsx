@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { IoIosMore } from 'react-icons/io';
+import { FaRegHeart, FaRegComment } from 'react-icons/fa';
+import { FiSend } from 'react-icons/fi';
 import COLOR from '../utility/color';
 
 const ContentTitle = styled.div`
@@ -24,7 +26,7 @@ const CategoryCircle = styled.span`
     height: 32px;
     background-color: ${COLOR.Memorize_BLUE};
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 12px;
 `;
 
 const ContentBox = styled.div`
@@ -40,10 +42,31 @@ const ContentBox = styled.div`
     padding: 30px;
 `;
 
-// cosnt ContentFooter = styled.div`
+const ContentFooter = styled.div`
+    width: 468px;
+    height: 56px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    svg {
+        font-size: 25px;
+    }
+`;
 
-// `;
+const Comment = styled.div`
+    width: 468px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    color: ${COLOR.GRAY};
+`;
 
+const FooterBorder = styled.div`
+    width: 500px;
+    height: 29px;
+    border-bottom: 1.2px solid ${COLOR.Memorize_GRAY}; 
+`;
 
 function ContentComp() {
     return (
@@ -51,7 +74,7 @@ function ContentComp() {
             <ContentTitle>
                 <div>
                     <CategoryCircle />
-                    안녕?
+                    근의 공식
                 </div>
                 <IoIosMore />
             </ContentTitle>
@@ -59,6 +82,14 @@ function ContentComp() {
                 근의공식근의공식근의공식근의공식
                 근의공식근의공식근의공식근의공식
             </ContentBox>
+            <ContentFooter>
+                <FaRegHeart />
+                <FaRegComment />
+                <FiSend />
+            </ContentFooter>
+            <Comment>첫번째 댓글</Comment>
+            <Comment>두번째 댓글</Comment>
+            <FooterBorder />
         </>
     );
 }

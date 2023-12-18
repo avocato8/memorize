@@ -1,4 +1,4 @@
-import ContentComp from './contentComp';
+import ContentComp from './ContentComp';
 import NavbarComp from './navbarComp';
 
 function Test() {
