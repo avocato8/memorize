@@ -1,7 +1,9 @@
 # memorize
-<p>A website to help you with your studies.</p>
+<img src='/client/public/logo.png' height="250px"/>
+A website to help you with your studies.
 
 ## Tech Stack
-<p>FE: React</p>
-<p>BE: express</p>
-<p>DB: MongoDB</p>
+<p>FrontEnd: React</p>
+<p>Mobile: React Native</p>
+<p>BackEnd: express</p>
+<p>Database: MongoDB</p>
